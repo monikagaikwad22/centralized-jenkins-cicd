@@ -7,7 +7,9 @@ This project demonstrates the implementation of a **centralized CI/CD system** u
 Instead of managing separate Jenkins setups for each application, a single Jenkins instance is used to enforce **standardized CI/CD workflows**, improving efficiency and maintainability.
 
 
+
 <img width="1536" height="1024" alt="CI_CD pipeline architecture overview" src="https://github.com/user-attachments/assets/0b17e441-030a-4cfe-873c-2c0d0374da17" />
+
 
 ---
 
@@ -71,7 +73,9 @@ app-nodejs/
 └── Jenkinsfile
 ```
 
+
 ![WhatsApp Image 2026-03-23 at 2 12 52 PM](https://github.com/user-attachments/assets/0262eab1-157b-4ade-91f0-68dd3a7d1769)
+
 
 
 ---
@@ -85,7 +89,9 @@ app-python/
 └── Jenkinsfile
 ```
 
+
 ![WhatsApp Image 2026-03-23 at 2 13 44 PM](https://github.com/user-attachments/assets/5e0cc322-802b-4b0b-9ec3-707e868fd6fa)
+
 
 
 ---
@@ -104,7 +110,9 @@ Jenkins is deployed on an EC2 instance and configured for centralized pipeline e
 6. Configure credentials
 7. Connect shared library
 
+
 ![WhatsApp Image 2026-03-23 at 2 26 58 PM](https://github.com/user-attachments/assets/ab63fd9d-4505-4b48-bd14-dba14b69e62f)
+
 
 
 ---
@@ -120,7 +128,9 @@ Label: docker
 Connection: SSH
 ```
 
+
 ![WhatsApp Image 2026-03-23 at 2 31 51 PM](https://github.com/user-attachments/assets/a87858b1-2018-4ed9-8fa6-3379d132f5b7)
+
 
 
 ---
@@ -137,6 +147,7 @@ Manage Jenkins → System → Global Pipeline Libraries
 Library Name: shared-library-config
 ```
 
+
 ![WhatsApp Image 2026-03-23 at 2 26 12 PM](https://github.com/user-attachments/assets/b135d4a6-4128-44d4-aa8b-1f04f22900bb)
 
 
@@ -149,11 +160,15 @@ Separate pipelines are created for each application:
 **app-nodejs-pipeline**
 
 
+
 <img width="1920" height="1008" alt="image" src="https://github.com/user-attachments/assets/83255afc-be6d-44e9-8f30-2c617ca3ad4a" />
 
 
 
+
 **app-python-pipeline**
+
+
 
 <img width="1920" height="1008" alt="image" src="https://github.com/user-attachments/assets/0cb243f6-ca7c-4540-b2b9-0c177d09d799" />
 
@@ -171,8 +186,10 @@ Each pipeline executes standardized stages:
 * Perform security scan
 * Deploy or build Docker image
 
+
   
 <img width="1920" height="1008" alt="Centralized-CI-CD-Platform-using-Shared-Jenkins-Infrastructure_README md at main · mrbacchu2020_Centralized-CI-CD-Platform-using-Shared-Jenkins-Infrastructure — Mozilla Firefox 3_19_2026 10_28_12 PM" src="https://github.com/user-attachments/assets/fe45bc7a-21a7-4704-87c0-ab6610873cb9" />
+
 
 
 ![WhatsApp Image 2026-03-23 at 2 32 40 PM](https://github.com/user-attachments/assets/00c0a340-fe53-4e1f-a97c-1f31551da781)
